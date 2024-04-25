@@ -31,7 +31,7 @@ struct ContentView: View {
                 Image(systemName: "house.circle")
                     .scaleEffect(CGSize(width: 6, height: 6))
                     .offset(x: 0, y: 200)
-                Image(systemName: "folder.fill.badge.questionmark")
+                Image(systemName: "folder.fill")
                 .scaleEffect(CGSize(width:3.7, height: 3.7))
                     .offset(x: -130, y: 130)
                 Image(systemName: "person.circle.fill")
