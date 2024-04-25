@@ -16,9 +16,9 @@ struct ContentView: View {
                 
                
             
-            TextField("enter budget here", text: $gotonext.Budget)
+            TextField("enter budget for the time frame  here", text: $gotonext.Budget)
             
-            TextField("enter amount spent", text: $gotonext.Budget)
+            
             
             
             
