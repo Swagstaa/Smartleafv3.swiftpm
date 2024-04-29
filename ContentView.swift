@@ -11,7 +11,6 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
-                Text("Budget Without The Worry of Overspending")
                 Text("Welcome")
                 
                 
