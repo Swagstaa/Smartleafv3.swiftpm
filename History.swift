@@ -7,9 +7,9 @@ struct HistoryView: View {
        
         
         VStack{
-            Text("Budget spent on")
-                .frame(width: 100, height: 100, alignment: .trailing)
+            Text("You have spent () out ()")
+            Text("You can spend () more and still stay in budget")
             
-           }
+            }
         }
     }
