@@ -18,7 +18,7 @@ struct ContentView: View {
                 TextField("enter budget here", text: $gotonext.Budget)
                 
                 NavigationLink("Budget"){
-                    HistoryView()
+                    ProfileView()
                 }
                 
                 
