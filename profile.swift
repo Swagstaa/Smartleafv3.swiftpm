@@ -9,8 +9,8 @@ struct ProfileView: View {
         NavigationStack {
              Text("you have spent out of \(budget)")
                 .frame(width: 100, height: 100, alignment: .trailing)
-            NavigationLink("History"){
-               HistoryView()
+            NavigationLink("History") {
+                HistoryView()
             }
             
            }
