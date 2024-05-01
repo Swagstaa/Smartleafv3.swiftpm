@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var budget = 0
+    @Binding var budget: NextPage
     
     var body: some View {
         
