@@ -10,8 +10,9 @@ struct ProfileView: View {
             Text("Budget History")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .foregroundColor(.gray)
              Text("you have spent out of \(budget)")
-                .frame(width: 100, height: 100, alignment: .trailing)
+               
             NavigationLink("History") {
                 HistoryView()
                 
