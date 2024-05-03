@@ -7,17 +7,11 @@ struct ProfileView: View {
     var body: some View {
         
         NavigationStack {
-            Text("Budget History")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(.gray)
-            Text("you have spent \(budget.spent) out of \(budget.Budget)")
-               
-            NavigationLink("History") {
-                HistoryView()
+                
+                Text("You Have Spent \(budget.spent) out of \(budget.Budget)")
+                
+                
             }
-            
-           }
         }
     }
 
