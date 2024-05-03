@@ -28,7 +28,9 @@ struct ContentView: View {
                     ProfileView(budget: gotonext)
                 }
                 
-                
+                NavigationLink("History") {
+                    HistoryView()
+                }
                 
             }
         }
