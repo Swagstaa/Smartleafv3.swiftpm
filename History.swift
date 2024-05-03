@@ -8,7 +8,7 @@ struct HistoryView: View {
         
         VStack{
 
-            
+            Text("You spent your budget on:\(category)")
             
             }
         }
