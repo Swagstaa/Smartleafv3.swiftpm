@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
                 
                 
-                NavigationLink("Budget"){
+                NavigationLink("Profile"){
                     ProfileView(budget: gotonext)
                 }
                 
