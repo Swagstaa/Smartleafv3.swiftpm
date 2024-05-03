@@ -7,11 +7,15 @@ struct ProfileView: View {
     var body: some View {
         
         NavigationStack {
-                
+            VStack(spacing:40) {
+                Text("Profile")
+                    .bold()
+                    .font(.largeTitle)
                 Text("You Have Spent \(budget.spent) out of \(budget.Budget)")
+                    .font(.largeTitle)
                 
                 
             }
         }
     }
-
+}
