@@ -14,7 +14,7 @@ struct ProfileView: View {
                 Text("You Have Spent \(budget.spent) out of \(budget.Budget)")
                     .font(.largeTitle)
                 
-                NavigationLink("History") {
+                NavigationLink("History"){
                     HistoryView()
                 }
                 

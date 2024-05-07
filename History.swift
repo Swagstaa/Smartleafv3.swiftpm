@@ -9,6 +9,11 @@ struct HistoryView: View {
     
     var body: some View {
         VStack{
+            Text("History")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            
             
           
             
