@@ -12,7 +12,11 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 Text("Welcome")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 
                 
                 
