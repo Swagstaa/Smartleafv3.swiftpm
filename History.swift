@@ -6,10 +6,17 @@ struct HistoryView: View {
     
     var body: some View {
         
-        VStack{
-
-            Text("You spent your budget on:\(category)")
-            
+        VStack(spacing:40){
+            Text("History")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                
+                Text("You spent your budget on:\(category)")
+                .font(.largeTitle)
+                
+                
+                
+                
             }
         }
     }
