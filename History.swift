@@ -2,22 +2,18 @@ import SwiftUI
 
 struct HistoryView: View {
     
-    @State var category = ""
+    let options = ["Clothes","Groceries","Necessities"]
+    @State private var categorySelect = 0
     
     var body: some View {
-        
         VStack{
-
-            Text("You spent your budget on:\(category)")
             
-            }
-        
-        
-        
-        
+          
+            
+            
         }
     }
-
+}
 
 
 
