@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-   @State var spenttextfield = ""
+    @State var spenttextfield = ""
     
     @State var gotonext = NextPage(Budget: "", spent: 0)
     
@@ -25,16 +25,19 @@ struct ContentView: View {
                 TextField("enter money spent", text: $spenttextfield)
                 Button("add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
-                }
+                }.foregroundColor(.red)
                 
-                .padding()
+                    .padding()
                 
-                }
+                NavigationLink("Profile"){
+                    ProfileView(budget: gotonext)
+                }.foregroundColor(.red)
                 
                 NavigationLink("History") {
                     HistoryView()
-                }
+                }.foregroundColor(.red)
                 
             }
         }
     }
+}
