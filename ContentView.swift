@@ -12,9 +12,11 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
-            
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 Text("Welcome")
-
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 
                 
                 
@@ -25,6 +27,7 @@ struct ContentView: View {
                     gotonext.spent = Int(spenttextfield) ?? 0
                 }.foregroundColor(.red)
                 
+                .padding()
                 
                 NavigationLink("Profile"){
                     ProfileView(budget: gotonext)
@@ -37,4 +40,3 @@ struct ContentView: View {
             }
         }
     }
-}
