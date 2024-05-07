@@ -11,6 +11,10 @@ struct HistoryView: View {
             Text("You spent your budget on:\(category)")
             
             }
+        
+        
+        
+        
         }
     }
 
