@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-   @State var spenttextfield = ""
+    @State var spenttextfield = ""
     
     @State var gotonext = NextPage(Budget: "", spent: 0)
     
@@ -27,7 +27,7 @@ struct ContentView: View {
                     gotonext.spent = Int(spenttextfield) ?? 0
                 }.foregroundColor(.red)
                 
-                .padding()
+                    .padding()
                 
                 NavigationLink("Profile"){
                     ProfileView(budget: gotonext)
@@ -40,3 +40,4 @@ struct ContentView: View {
             }
         }
     }
+}
