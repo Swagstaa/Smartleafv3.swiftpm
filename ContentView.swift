@@ -27,9 +27,8 @@ struct ContentView: View {
                     gotonext.spent = Int(spenttextfield) ?? 0
                 }
                 
+                .padding()
                 
-                NavigationLink("Profile"){
-                    ProfileView(budget: gotonext)
                 }
                 
                 NavigationLink("History") {
@@ -39,4 +38,3 @@ struct ContentView: View {
             }
         }
     }
-}
