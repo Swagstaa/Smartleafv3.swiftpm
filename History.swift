@@ -1,22 +1,32 @@
 import SwiftUI
 
-struct HistoryView: View {
-    
-    let options = ["Clothes","Groceries","Necessities"]
-    @State private var categorySelect = 0
-    
-    @State var gotonext = NextPage(Budget: "", spent: 0)
-    
-    var body: some View {
+struct HistoryView: View{
+    let three: one
+   
+     @State var ten: [one] = []
+    var body: some View{
         VStack{
             
-          
-            
-            
+            HeaderView(ten: $ten)
+            List(ten, id: \.self){ three in
+                HistoryView(three: three)
+                
+                
+                
+                Text(three.name)
+                Text("enter amount spent: \(three.Class)")
+                
+                
+            }
         }
+        
     }
+  
+    
+
 }
-
-
+#Preview{
+    HistoryView(three: one(name: "", Class: ""))
+}
 
 

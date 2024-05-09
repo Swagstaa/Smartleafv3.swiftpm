@@ -2,6 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+  
+   
+    
     @State var spenttextfield = ""
     
     @State var gotonext = NextPage(Budget: "", spent: 0)
@@ -12,11 +15,7 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
                 Text("Welcome")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
                 
                 
                 
@@ -25,18 +24,36 @@ struct ContentView: View {
                 TextField("enter money spent", text: $spenttextfield)
                 Button("add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
-                }.foregroundColor(.red)
+                   
+                }
                 
-                    .padding()
                 
-                NavigationLink("Profile"){
+                NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
-                }.foregroundColor(.red)
+                }
+                
                 
                 NavigationLink("History") {
-                    HistoryView()
-                }.foregroundColor(.red)
+                    HistoryView(three: one(name: "", Class: ""))
+                }
                 
+                Image(systemName: "rectangle.fill")
+                    .scaleEffect(CGSize(width: 40.0, height: 6.0))
+                    .offset(x: 0, y: 370)
+                    .foregroundColor(.green)
+                Image(systemName: "circle.fill")
+                    .scaleEffect(CGSize(width: 7.0, height: 6.0))
+                    .offset(x: 0, y: 260)
+                    .foregroundColor(.green)
+                Image(systemName: "house.circle")
+                    .scaleEffect(CGSize(width: 6, height: 6))
+                    .offset(x: 0, y: 200)
+                Image(systemName: "folder.fill")
+                    .scaleEffect(CGSize(width:3.7, height: 3.7))
+                    .offset(x: -130, y: 130)
+                Image(systemName: "person.circle.fill")
+                    .scaleEffect(CGSize(width: 4, height: 4))
+                    .offset(x: 130, y: 55)
             }
         }
     }

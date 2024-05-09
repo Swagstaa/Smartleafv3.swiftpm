@@ -12,4 +12,3 @@ struct MyApp: App {
         }
     }
 }
-
