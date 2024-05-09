@@ -6,14 +6,6 @@ struct HistoryView: View{
      @State var ten: [one] = []
     var body: some View{
         VStack{
-            Text("History")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            
-            
-          
-            
             
             HeaderView(ten: $ten)
             List(ten, id: \.self){ three in
@@ -22,7 +14,7 @@ struct HistoryView: View{
                 
                 
                 Text(three.name)
-                Text("enter amount spent: \(three.Class)")
+                Text(" \(three.Class)")
                 
                 
             }
@@ -36,5 +28,3 @@ struct HistoryView: View{
 #Preview{
     HistoryView(three: one(name: "", Class: ""))
 }
-
-
