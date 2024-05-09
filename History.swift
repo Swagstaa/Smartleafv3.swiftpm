@@ -6,6 +6,14 @@ struct HistoryView: View{
      @State var ten: [one] = []
     var body: some View{
         VStack{
+            Text("History")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            
+            
+          
+            
             
             HeaderView(ten: $ten)
             List(ten, id: \.self){ three in
