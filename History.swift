@@ -6,6 +6,12 @@ struct HistoryView: View{
      @State var ten: [one] = []
     var body: some View{
         VStack{
+            Text("Profile History")
+                .padding()
+                .font(.largeTitle)
+                .bold()
+                
+            
             
             HeaderView(ten: $ten)
             List(ten, id: \.self){ three in
