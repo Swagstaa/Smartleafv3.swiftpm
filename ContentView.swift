@@ -24,21 +24,9 @@ struct ContentView: View {
             }
             
             
-            VStack(spacing:30){
-                TextField("Enter Budget", text: $gotonext.Budget)
-                
-                TextField("Enter Money Spent", text: $spenttextfield)
-                
-            }
             
-            Text("")
-            Text("")
-            VStack(spacing:50){
-                Button("Add Spent Amount") {
-                    gotonext.spent = Int(spenttextfield) ?? 0
-                }.foregroundColor(.green)
-                
-                
+            
+            VStack(spacing: 30){
                 NavigationLink("Budget"){
                     
                     ProfileView(budget: gotonext)
@@ -47,11 +35,12 @@ struct ContentView: View {
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
                 }.foregroundColor(.green)
-
+                
                 
                 
                 
             }
+            
         }
     }
 }
