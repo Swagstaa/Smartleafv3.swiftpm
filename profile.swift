@@ -31,7 +31,8 @@ struct ProfileView: View {
                     gotonext.spent = Int(spenttextfield) ?? 0
                     
                 }
-                
+               
+                Text("you have spent \(budget.spent) out of \(budget.Budget)")
                 
                 
                 
