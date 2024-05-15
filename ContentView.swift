@@ -30,12 +30,18 @@ struct ContentView: View {
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
-                }
+                } .foregroundColor(.green)
                 
                 
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
-                }
+                } .foregroundColor(.green)
+                
+                
+                
+                    Image("Green Wave1")
+                    .resizable()
+                    .offset(x: 0, y: 40)
                 
 
             }
