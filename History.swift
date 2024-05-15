@@ -10,6 +10,7 @@ struct HistoryView: View{
                 .padding()
                 .font(.largeTitle)
                 .bold()
+            
                 
             
             
@@ -23,7 +24,10 @@ struct HistoryView: View{
                 Text(" \(three.Class)")
                 
                 
+                
             }
+            Image("Green Wave")
+                .resizable()
         }
         
     }
