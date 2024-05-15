@@ -15,7 +15,11 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
+                    .bold()
+                    .font(.title)
                 Text("Welcome")
+                    .bold()
+                    .font(.title)
                 
                 
                 
@@ -30,6 +34,7 @@ struct ContentView: View {
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
+                        
                 }
                 
                 
