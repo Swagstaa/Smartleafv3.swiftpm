@@ -12,10 +12,11 @@ struct ProfileView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
             Text("you have spent \(budget.spent) out of \(budget.Budget)")
-               
+                .foregroundColor(.green)
            
             
            }
+        
         }
     }
 
