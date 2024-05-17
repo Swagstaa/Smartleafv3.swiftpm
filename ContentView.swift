@@ -29,7 +29,7 @@ struct ContentView: View {
                 Button("add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
                    
-                }
+                }.foregroundColor(.red)
                 
                 
                 NavigationLink("Budget"){
