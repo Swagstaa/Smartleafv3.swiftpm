@@ -6,11 +6,11 @@ struct HistoryView: View{
      @State var ten: [one] = []
     var body: some View{
         VStack{
-            Text("Profile History")
+            Text("List")
                 .padding()
                 .font(.largeTitle)
                 .bold()
-            
+                .foregroundColor(.gray)
                 
             
             
@@ -26,10 +26,9 @@ struct HistoryView: View{
                 
                 
             }
-            Image("Green Wave")
-                .resizable()
+
         }
-        
+       
     }
   
     

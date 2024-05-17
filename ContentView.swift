@@ -29,27 +29,26 @@ struct ContentView: View {
                 Button("Add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
                    
-                }
-                .foregroundColor(.green)
-                .bold()
-                .font(.title3)
-
+                }.foregroundColor(.red)
+                
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
-                    
                         
-                }
-                .foregroundColor(.green)
-                .bold()
-                .font(.title3)
+                } .foregroundColor(.green)
+                
                 
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
-                }
-                .foregroundColor(.green)
-                .bold()
-                .font(.title3)
+                } .foregroundColor(.green)
+                
+                
+                
+                    Image("Green Wave1")
+                    .resizable()
+                    .offset(x: 0, y: 40)
+                
+
             }
         }
     }
