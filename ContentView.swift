@@ -35,7 +35,7 @@ struct ContentView: View {
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
                         
-                }
+                }.padding()
                 
                 
                 NavigationLink("History") {
