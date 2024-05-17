@@ -10,13 +10,23 @@ struct ProfileView: View {
             Text("Budget History")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(.gray)
-            Text("you have spent \(budget.spent) out of \(budget.Budget)")
-                .foregroundColor(.green)
-           
+            Text("")
+            Text("")
+            Text("")
+            Text("Track Your Spending")
+                .fontWeight(.bold)
+                .font(.largeTitle)
+            Text("")
+            Text("")
+            Text("")
             
-           }
-        
+            Text("You Have Spent \(budget.spent) Out Of \(budget.Budget)")
+                .font(.largeTitle)
+                .foregroundColor(.green)
+            
+            
+            
         }
     }
+}
 
