@@ -26,23 +26,30 @@ struct ContentView: View {
                 TextField("enter budget here", text: $gotonext.Budget)
                 
                 TextField("enter money spent", text: $spenttextfield)
-                Button("add spent amount") {
+                Button("Add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
                    
                 }
-                
+                .foregroundColor(.green)
+                .bold()
+                .font(.title3)
+
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
+                    
                         
                 }
-                
+                .foregroundColor(.green)
+                .bold()
+                .font(.title3)
                 
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
                 }
-                
-
+                .foregroundColor(.green)
+                .bold()
+                .font(.title3)
             }
         }
     }
