@@ -29,18 +29,18 @@ struct ContentView: View {
                 Button("add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
                    
-                }.foregroundColor(.red)
+                }.foregroundColor(.blue)
                 
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
                         
-                } .foregroundColor(.green)
+                } .foregroundColor(.yellow)
                 
                 
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
-                } .foregroundColor(.green)
+                } .foregroundColor(.blue)
                 
                 
                 
