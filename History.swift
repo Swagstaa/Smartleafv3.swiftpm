@@ -5,7 +5,7 @@ struct HistoryView: View{
    
      @State var ten: [one] = []
     var body: some View{
-        VStack{
+        NavigationStack{
             Text("Budget History")
                 .padding()
                 .font(.largeTitle)

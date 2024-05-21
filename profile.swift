@@ -24,6 +24,9 @@ struct ProfileView: View {
                 .font(.largeTitle)
                 .foregroundColor(.green)
             
+            Image("Green back")
+            .resizable()
+            .offset(x: 10, y: 50)
             
             
         }
