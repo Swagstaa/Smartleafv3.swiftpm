@@ -7,7 +7,7 @@ struct ProfileView: View {
     var body: some View {
         
         NavigationStack {
-            Text("Budget History")
+            Text("Budget")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Text("")
