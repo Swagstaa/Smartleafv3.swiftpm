@@ -25,6 +25,7 @@ struct HistoryView: View{
                 
                 
                 
+                
             }
 
         }

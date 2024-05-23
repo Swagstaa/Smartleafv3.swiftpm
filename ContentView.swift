@@ -15,9 +15,18 @@ struct ContentView: View {
             VStack(spacing:60){
                 
                 Text("Leaf-Budget Smartly")
+                    .padding()
+                    .background(Color.green)
+                    .cornerRadius(6.0)
+                
+                    
                     .bold()
                     .font(.largeTitle)
                 Text("Welcome")
+                    .padding()
+                    .background(Color.green)
+                    .cornerRadius(6.0)
+                    
                     .bold()
                     .font(.largeTitle)
                 
@@ -28,7 +37,7 @@ struct ContentView: View {
                 TextField("enter money spent", text: $spenttextfield)
                 Button("Add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
-                   
+                        
                 }.foregroundColor(.blue)
                 
                 
