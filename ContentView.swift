@@ -16,10 +16,10 @@ struct ContentView: View {
                 
                 Text("Leaf-Budget Smartly")
                     .bold()
-                    .font(.title)
+                    .font(.largeTitle)
                 Text("Welcome")
                     .bold()
-                    .font(.title)
+                    .font(.largeTitle)
                 
                 
                 
@@ -34,13 +34,18 @@ struct ContentView: View {
                 
                 NavigationLink("Budget"){
                     ProfileView(budget: gotonext)
-                        
-                } .foregroundColor(.yellow)
+                    foregroundColor(.green)
+                        .font(.largeTitle)
+                    fontWeight(.bold)
+                }
                 
                 
                 NavigationLink("History") {
                     HistoryView(three: one(name: "", Class: ""))
-                } .foregroundColor(.blue)
+                    foregroundColor(.green)
+                        .font(.largeTitle)
+                    fontWeight(.bold)
+                } 
                 
                 
                 

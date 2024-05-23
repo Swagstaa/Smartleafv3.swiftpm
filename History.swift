@@ -10,7 +10,7 @@ struct HistoryView: View{
                 .padding()
                 .font(.largeTitle)
                 .bold()
-                .foregroundColor(.gray)
+                
                 
             
             
