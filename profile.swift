@@ -24,6 +24,12 @@ struct ProfileView: View {
                 .font(.largeTitle)
                 .foregroundColor(.green)
             
+            NavigationLink("Amount left"){
+            AmountView()
+           } .foregroundColor(.yellow)
+               .padding()
+                .bold()
+        
             Image("Green back")
             .resizable()
             .offset(x: 10, y: 50)
