@@ -26,6 +26,7 @@ struct ProfileView: View {
             
             Image("Green back")
             .resizable()
+            .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
             .offset(x: 10, y: 50)
             
             
