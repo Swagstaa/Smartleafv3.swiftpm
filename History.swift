@@ -5,12 +5,11 @@ struct HistoryView: View{
    
      @State var ten: [one] = []
     var body: some View{
-        NavigationStack{
-            Text("Budget History")
+        VStack{
+            Text("Profile History")
                 .padding()
                 .font(.largeTitle)
                 .bold()
-                
                 
             
             
@@ -24,12 +23,9 @@ struct HistoryView: View{
                 Text(" \(three.Class)")
                 
                 
-                
-                
             }
-
         }
-       
+        
     }
   
     

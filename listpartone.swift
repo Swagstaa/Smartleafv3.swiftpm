@@ -8,8 +8,8 @@ struct HeaderView: View {
     
     var body: some View {
         HStack{
-            TextField("Money Spent", text: $seven)
-            TextField("What was it spent on?", text: $six)
+            TextField("money spent", text: $seven)
+            TextField("what was it spent on?", text: $six)
             Button("+"){
                 
                 let five = one(name: six, Class: seven)
