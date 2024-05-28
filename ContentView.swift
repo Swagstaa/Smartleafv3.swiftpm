@@ -1,4 +1,4 @@
-import SwiftUI
+    `import SwiftUI
 
 struct ContentView: View {
     
@@ -17,9 +17,11 @@ struct ContentView: View {
                 Text("Leaf-Budget Smartly")
                     .bold()
                     .font(.title)
+                    .foregroundColor(.red)
                 Text("Welcome")
                     .bold()
                     .font(.title)
+                    .foregroundColor(.red)
                 
                 
                 
@@ -29,7 +31,7 @@ struct ContentView: View {
                 Button("add spent amount") {
                     gotonext.spent = Int(spenttextfield) ?? 0
                    
-                }.foregroundColor(.green)
+                }.foregroundColor(.green) .font(.title)
                 
                 
                 NavigationLink("Budget"){
