@@ -21,7 +21,7 @@ struct ContentView: View {
                 Text("Welcome")
                     .bold()
                     .font(.title)
-                    .foregroundColor(.red)
+                    .foregroundColor(.yellow)
                 
                 
                 
