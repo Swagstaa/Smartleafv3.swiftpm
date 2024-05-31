@@ -7,7 +7,7 @@ struct AmountView: View {
                 .bold()
                 .font(.title2)
                 .foregroundColor(.gray)
-            Text("Check your amount to see  what  you have left")
+            Text("Check your amount to see what you have left")
                 .font(.caption)
                 .foregroundColor(.gray)
             
