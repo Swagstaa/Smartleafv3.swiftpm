@@ -44,6 +44,9 @@ struct ContentView: View {
                     HistoryView(three: one(name: "", Class: ""))
                 }.foregroundColor(.green)
                 
+                Image("Green Wave1")
+                    .resizable()
+                
 
             }
         }
